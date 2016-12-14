@@ -4,6 +4,8 @@
   "description": "pdp styling exercise",
   "main": "index.js",
   "scripts": {
+    "build": "npm install && webpack",
+    "watch": "npm install && webpack --watch",
     "test": "test"
   },
   "author": "Stephen Cheung",
