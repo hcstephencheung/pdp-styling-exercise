@@ -1,0 +1,24 @@
+{
+  "name": "pdp",
+  "version": "1.0.0",
+  "description": "pdp styling exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Stephen Cheung",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.13.1",
+    "postcss-loader": "^1.2.1",
+    "postcss-smart-import": "^0.6.3",
+    "precss": "^1.4.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
