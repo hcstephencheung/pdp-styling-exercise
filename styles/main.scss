@@ -1,3 +1,8 @@
-/* SCSS file */
+// Globals
 @import 'globals/_variables.scss';
-@import 'templates/_pdp.scss';
+
+// Components
+@import '_components.scss';
+
+// Templates
+@import '_templates.scss';

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -16,12 +15,56 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-                
-            </div>
-        </div>
+        <div class="outer-container">
+            <main class="t-pdp">
+                <div class="content">
+                    <div class="c-row">
+                        <div class="c-product c-arrange">
+                            <form>
+                                <div class="c-arrange__item c-product__image">
+                                    <img src="/10289004.jpg" alt="Samsung Galaxy S5"/>
+                                </div>
+                                <div class="c-arrange__item c-product__description">
+                                    <h1 class="c-product__title"> Samsung <span> Galaxy S5 </span> </h1>
 
-        <script src="js/bundle.js"></script>
+                                    <span class="c-product__price"> $719.99 </span>
+                                    <div class="c-product__qty c-caret__down" >
+                                        <input type="number" id="stepper" value="1" name="qty" />
+                                    </div>
+
+                                    <button class="c-button c-caret__down" value="add-to-cart" type="submit">
+                                        <span> Add to cart </span>
+                                    </button>
+
+                                    <div class="c-rating__icon-wrapper">
+                                        <div class="c-rating__filled-icons"></div>
+                                        <div class="c-rating__filled-icons"></div>
+                                        <div class="c-rating__filled-icons"></div>
+                                        <div class="c-rating__filled-icons"></div>
+                                        <div class="c-rating__unfilled-icons"></div>
+                                    </div>
+                                    <p> Lorem Ipsum </p>
+
+                                    <div class="c-card">
+                                        <h3> Add Product Production Plan </h3>
+                                        <div class="c-checkbox">
+                                            <input id="two_year_protection_plan" type="checkbox" value="two_year_protection_plan" />
+                                            <label for="two_year_protection_plan"> 2-Year Protection Plan <span> $105.00 </span></label>
+                                        </div>
+
+                                        <div class="c-checkbox">
+                                            <input id="one_year_protection_plan" type="checkbox" value="one_year_protection_plan" />
+                                            <label for="one_year_protection_plan"> 1-Year Protection Plan <span> $60.00 </span></label>
+                                        </div>
+
+                                        <p>* A $99 deductible applies to all claims </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
