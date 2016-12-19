@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './js/app',
@@ -26,7 +27,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('css/app.css')
+        new ExtractTextPlugin('css/app.css'),
+        new CopyWebpackPlugin([
+            {from: 'assets/', to: 'assets/'}
+        ]),
     ],
     stats: {
         // Nice colored output
