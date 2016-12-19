@@ -1,6 +1,6 @@
 # PDP styling
 ## Instructions:
-To run, please run `npm build` then `npm run serve`. Then in browser, navigate to `http://localhost:3000`
+To run, please run `npm run build` then `npm run serve`. Then in browser, navigate to `http://localhost:3000`
 
 # Dev Notes
 ### Folder structure
