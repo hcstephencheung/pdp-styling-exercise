@@ -1,0 +1,16 @@
+// Button
+// ---
+//
+.c-button {
+    border: none;
+
+    padding: $unit*3 $unit*4;
+
+    background-color: white;
+}
+
+// Modifiers
+// ---
+.c-button.c--full-width {
+    width: 100%;
+}

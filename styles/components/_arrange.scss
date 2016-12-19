@@ -10,7 +10,12 @@
     .c-arrange__item {
         display: table-cell;
 
+        width: 50%;
+
         vertical-align: top;
     }
 
+    .c--shrink {
+        width: 20%;
+    }
 }

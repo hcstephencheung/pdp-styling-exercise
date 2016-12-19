@@ -25,36 +25,40 @@
                                     <img src="assets/images/10289004.jpg" alt="Samsung Galaxy S5"/>
                                 </div>
                                 <div class="c-arrange__item c-product__description">
-                                    <h1 class="c-product__title"> Samsung <span> Galaxy S5 </span> </h1>
+                                    <h1 class="c-product__title"> Samsung </h1>
+                                    <h2> Galaxy S5 </h2>
 
-                                    <span class="c-product__price"> $719.99 </span>
-                                    <div class="c-product__qty c-caret__down" >
-                                        <input type="number" id="stepper" value="1" name="qty" />
+                                    <div class="c-arrange">
+                                    <span class="c-product__price c-arrange__item"> $719.99 </span>
+                                        <div class="c-product__qty c-icon c-arrange__item c--shrink" data-icon-name="chevron-down">
+                                            <!-- Needs JS for stepper functionality -->
+                                            <input type="number" id="stepper" value="1" name="qty" />
+                                        </div>
                                     </div>
 
-                                    <button class="c-button c-icon" data-icon-name="star" value="add-to-cart" type="submit">
+                                    <button class="c-button c--full-width c-icon" data-icon-name="chevron-down" value="add-to-cart" type="submit">
                                         <span> Add to cart </span>
                                     </button>
 
-                                    <div class="c-rating__icon-wrapper">
-                                        <div class="c-rating__filled-icons"></div>
-                                        <div class="c-rating__filled-icons"></div>
-                                        <div class="c-rating__filled-icons"></div>
-                                        <div class="c-rating__filled-icons"></div>
-                                        <div class="c-rating__unfilled-icons"></div>
+                                    <div class="t-pdp__rating-icons">
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star"></div>
                                     </div>
-                                    <p> Lorem Ipsum </p>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
 
                                     <div class="c-card">
                                         <h3> Add Product Production Plan </h3>
                                         <div class="c-checkbox">
                                             <input id="two_year_protection_plan" type="checkbox" value="two_year_protection_plan" />
-                                            <label for="two_year_protection_plan"> 2-Year Protection Plan <span> $105.00 </span></label>
+                                            <label for="two_year_protection_plan"> 2-Year Protection Plan <a href="#"> $105.00 </a></label>
                                         </div>
 
                                         <div class="c-checkbox">
                                             <input id="one_year_protection_plan" type="checkbox" value="one_year_protection_plan" />
-                                            <label for="one_year_protection_plan"> 1-Year Protection Plan <span> $60.00 </span></label>
+                                            <label for="one_year_protection_plan"> 1-Year Protection Plan <a href="#"> $60.00 </a></label>
                                         </div>
 
                                         <p>* A $99 deductible applies to all claims </p>

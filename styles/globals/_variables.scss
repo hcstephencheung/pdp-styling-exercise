@@ -1,7 +1,15 @@
+// Spacing
+// ---
+$unit: 5px;
+
 // Fonts
 // ---
+// 1. Add a 5px gutter when using icons
 $icon-font-size: 15px;
+$icon-spacing: 20px; // 1.
 
 // Colours
 // ---
 $accent: yellow;
+$green: green;
+$grey: grey;
