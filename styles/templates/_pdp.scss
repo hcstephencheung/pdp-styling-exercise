@@ -10,3 +10,12 @@
         margin-top: $unit*4;
     }
 }
+
+// Note: Unsure why design is like this, would ask designer for clarifcation
+.t-pdp__more-details-spacer {
+    height: 150px;
+
+    .c-circle {
+        margin: 0 auto;
+    }
+}

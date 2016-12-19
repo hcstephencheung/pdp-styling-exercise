@@ -1,0 +1,40 @@
+// Circle
+// ---
+//
+// 1. Center alignment (would use flexbox if possible)
+// 2. Issue here: icon is position-ed with dependency on content
+
+.c-circle {
+    position: relative; // 1.
+
+    border-radius: 50%;
+
+    width: $circle-unit;
+    height: $circle-unit;
+
+    padding: $circle-padding-unit;
+
+    background-color: white;
+
+    .c-icon::before {
+        position: absolute;
+
+        top: -18px; // 2.
+        left: 29px; // 2.
+
+        font-size: $medium-font-size;
+    }
+
+    .c-circle__center {
+        font-size: $small-font-size;
+
+        position: absolute; // 1.
+        top: 50%; // 1.
+        left: 0; // 1.
+        transform: translateY(-50%); // 1.
+
+        width: 100%; // 1.
+
+        text-align: center; // 1.
+    }
+}

@@ -1,0 +1,34 @@
+// Title Block
+// ---
+//
+// 1. Create new line for different font weights 
+
+.c-caption-block {
+    position: relative;
+
+    height: 150px;
+    max-width: 100%;
+    min-width: 150px;
+
+    padding: 0 $unit*2;
+
+    .c-caption-block__caption-light {
+        font-weight: normal;
+
+        &::after {
+            display: block; // 1.
+            content: ' '; // 1.
+        }
+    }
+
+    &.c--pink {
+        background-color: $pink;
+    }
+}
+
+.c-caption-block__caption {
+    position: absolute;
+    bottom: 0;
+
+    font-size: $large-font-size;
+}

@@ -1,0 +1,22 @@
+// Grid Lists
+// ---
+//
+// 1. 2-column list
+// 2. Font-size to adjust 50% columns
+
+.c-list {
+
+    &.c--2-up { // 1.
+        font-size: 0; // 2.
+
+        .c-list__item {
+            font-size: $small-font-size; // 2.
+
+            display: inline-block;
+            width: 50%;
+
+            white-space: normal;
+            vertical-align: top; // 1.
+        }
+    }
+}
