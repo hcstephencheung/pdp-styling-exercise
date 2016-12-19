@@ -3,11 +3,11 @@
 //
 
 .c-card {
-    h3 {
-        margin: $unit $unit;
-    }
-
     padding: $unit*3 $unit*4;
 
     background-color: white;
+}
+
+.c-card__title {
+    margin: $unit $unit;
 }
