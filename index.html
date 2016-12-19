@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,21 +7,142 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/modal.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="build/css/app.css">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-                
-            </div>
-        </div>
+        <div class="outer-container">
+            <main class="t-pdp">
+                <div class="content">
+                    <!-- ** Product image & Description ** -->
+                    <div class="c-row">
+                        <div class="c-product c-arrange c--no-flex">
+                            <form>
+                                <div class="c-arrange__item c-product__image">
+                                    <!-- TODO: serve mobile optimized image if possible -->
+                                    <img src="assets/images/10289004.jpg" alt="Samsung Galaxy S5"/>
+                                </div>
+                                <div class="c-arrange__item c-product__description">
+                                    <h1 class="c-product__title"> Samsung </h1>
+                                    <h2> Galaxy S5 </h2>
 
-        <script src="js/bundle.js"></script>
+                                    <div class="c-arrange">
+                                    <span class="c-product__price c-arrange__item"> $719.99 </span>
+                                        <div class="c-product__qty c-icon c-arrange__item c--shrink" data-icon-name="chevron-down">
+                                            <!-- Needs JS for stepper functionality -->
+                                            <input type="number" id="stepper" value="1" name="qty" />
+                                        </div>
+                                    </div>
+
+                                    <button class="c-button c--full-width c-icon" data-icon-name="chevron-down" value="add-to-cart" type="submit">
+                                        <span> Add to cart </span>
+                                    </button>
+
+                                    <div class="t-pdp__rating-icons">
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star-filled"></div>
+                                        <div class="c-icon" data-icon-name="star"></div>
+                                    </div>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+
+                                    <div class="c-card">
+                                        <h3> Add Product Production Plan </h3>
+                                        <div class="c-checkbox">
+                                            <input id="two_year_protection_plan" type="checkbox" value="two_year_protection_plan" />
+                                            <label for="two_year_protection_plan"> 2-Year Protection Plan <a href="#"> $105.00 </a></label>
+                                        </div>
+
+                                        <div class="c-checkbox">
+                                            <input id="one_year_protection_plan" type="checkbox" value="one_year_protection_plan" />
+                                            <label for="one_year_protection_plan"> 1-Year Protection Plan <a href="#"> $60.00 </a></label>
+                                        </div>
+
+                                        <p>* A $99 deductible applies to all claims </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- == Product image & Description == -->
+
+                    <!-- ** Features ** -->
+                    <div class="c-row">
+                        <div class="c-arrange c--no-flex">
+                            <div class="c-arrange__item c--shrink">
+                                <div class="c-caption-block c--pink">
+                                    <h3 class="c-caption-block__caption"> <span class="c-caption-block__caption-light"> Top </span> Features </h3>
+                                </div>
+
+                                <div class="c-arrange c--no-flex">
+                                    <div class="c-arrange__item c--spacer"></div>
+
+                                    <div class="c-arrange__item">
+                                        <div class="c-media">
+                                            <i class="c-icon" data-icon-name="play" role="presentation"></i>
+                                            <a href="#" class="js-video">
+                                                <img src="assets/images/video-thumbnails.jpg" alt="Guy lying down with his phone. Be like him! Play the video to hear more." />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-arrange c--no-flex">
+                                    <div class="c-arrange__item">
+                                        <div class="c-media">
+                                            <i class="c-icon" data-icon-name="play" role="presentation"></i>
+                                            <a href="#" class="js-video">
+                                                <img src="assets/images/video-thumbnails.jpg" alt="Girl happy on her phone. Be like her too! Play the video to hear more." />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="c-arrange__item c--spacer"></div>
+                                </div>
+                            </div>
+
+                            <div class="c-arrange__item">
+                                <div class="t-pdp__more-details-spacer">
+                                    <div class="c-circle">
+                                        <span class="c-circle__center c-icon" data-icon-name="chevron-down"> More Details </span>
+                                    </div>
+                                </div>
+                                <div class="c-card">
+                                    <ul class="c-list c--2-up">
+                                        <li class="c-list__item">
+                                            <h3> 3G </h3>
+                                            <p> 3G is great! </p>
+                                        </li>
+
+                                        <li class="c-list__item">
+                                            <h3> 6" Touchscreen </h3>
+                                            <p> omgat big display! much pixels. </p>
+                                        </li>
+
+                                        <li class="c-list__item">
+                                            <h3> Browse the Web </h3>
+                                            <p> stay connected with the interwebz! </p>
+                                        </li>
+
+                                        <li class="c-list__item">
+                                            <h3> Wi-Fi Capable </h3>
+                                            <p> Free internets!? Take my money. </p>
+                                        </li>
+
+                                        <li class="c-list__item">
+                                            <h3> Camera </h3>
+                                            <p> Now you can make your Instagram friends jealous with all those pretentious depth of field food shots. MM..raw egg. </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>

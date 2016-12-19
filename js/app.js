@@ -1,2 +1,2 @@
 // for webpack
-require('../styles/main.scss');
+require('../styles/app.scss');

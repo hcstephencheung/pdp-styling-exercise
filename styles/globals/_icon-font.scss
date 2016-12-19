@@ -1,0 +1,75 @@
+// Mixins for icons to work
+// ---
+// Name the iconset you would like to use
+$icon-font: 'icon-font' !default;
+
+// Set the path to the icon font files. Notice there is no slash at the end!
+$icon-font-path: '../fonts/icons/#{$icon-font}' !default;
+
+// List of icons made available your $icon-font file. Use this icon list to
+// generate your icon component classes.
+$icon-list: (
+
+    chevron-down: '\f052',
+    chevron-up: '\f055',
+    star: '\0028',
+    star-filled: '\0027',
+    star-half-filled: '\006c',
+    play: '\0030'
+
+) !default;
+
+@mixin icon-font($position: 'before') {
+
+    &::#{$position} {
+        display: inline-block;
+
+        font: {
+            family: $icon-font;
+            style: normal;
+            weight: normal;
+        }
+        text-decoration: inherit;
+        vertical-align: middle;
+    }
+}
+
+// @function: Icon Address
+// --------------------
+
+@function icon-address($icon-name) {
+    // Return the icon font text value
+    @if (map-has-key($icon-list, $icon-name)) {
+        @return map-get($icon-list, $icon-name);
+    }
+
+    // The desired icon does not exist in $icon-list
+    @else {
+        @warn '$icon-name value ("#{$icon-name}") is not set. Refer to $icon-list for a list of available icons';
+    }
+}
+
+// Icon Component
+// --------------
+//
+// This is the base icon class which must be applied to the element first.
+
+.c-icon,
+[data-icon-name] {
+    @include icon-font;
+}
+
+// Icon Names
+// ----------
+//
+// The icon name is a data attribute added to the element in tandem with the
+// icon component class (.c-icon)
+//
+// Icon Names and generated based on the $icon-list map. Therefore, to see the
+// full list of available icons, see $icon-list in _variables.scss
+
+@each $name, $character in $icon-list {
+    [data-icon-name="#{$name}"]::before {
+        content: icon-address($name);
+    }
+}

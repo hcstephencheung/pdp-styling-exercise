@@ -1,0 +1,11 @@
+// Project Specific Icons
+// ---
+//
+
+.c-icon {
+    font-size: $icon-font-size;
+}
+
+.c-icon[data-icon-name="star-filled"] {
+    color: $green;
+}

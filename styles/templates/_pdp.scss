@@ -1,6 +1,21 @@
-.main {
-    border: 1px solid $accent;
-    min-height: 300px;
+// PDP Template
+// ---
+//
 
-    background: linear-gradient(to bottom, white, black);
+.t-pdp {
+    background-color: $grey;
+
+
+    .c-button {
+        margin-top: $unit*4;
+    }
+}
+
+// Note: Unsure why design is like this, would ask designer for clarifcation
+.t-pdp__more-details-spacer {
+    height: 150px;
+
+    .c-circle {
+        margin: 0 auto;
+    }
 }

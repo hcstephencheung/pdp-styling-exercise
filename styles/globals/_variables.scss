@@ -1,2 +1,32 @@
+// Spacing
+// ---
+$unit: 5px;
+$circle-unit: 75px;
+$circle-padding-unit: 10px;
 
+// Opacity Values
+// ---
+$overlay-opacity: 0.75;
+
+// Fonts
+// ---
+// 1. Add a 5px gutter when using icons
+$icon-font-size: 15px;
+$icon-spacing: 20px; // 1.
+
+$xs-font-size: 8px;
+$small-font-size: 12px;
+$medium-font-size: 15px;
+$large-font-size: 24px;
+
+// Colours
+// ---
 $accent: yellow;
+$green: green;
+$grey: lightgrey;
+$pink: hotpink;
+
+// Z-index
+// ---
+$backdrop-layer: 0;
+$stage-layer: 10;

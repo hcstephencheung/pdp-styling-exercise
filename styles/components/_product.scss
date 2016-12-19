@@ -1,0 +1,119 @@
+// Product
+// ---
+
+.c-product {
+
+    h1 {
+        margin-bottom: $unit;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    // Icon Adjustments
+    // ---
+    //
+    .c-icon {
+        position: relative; // 1.
+
+        padding-right: $icon-spacing;
+
+        &::before {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+        }
+    }
+
+    // Positioning of icons
+    .c-product__qty.c-icon {
+        &::before {
+            top: 8px;
+            right: 9px;
+        }
+    }
+
+    .c-button.c-icon {
+        &::before {
+            top: 16px;
+            right: 8px;
+        }
+    }
+}
+
+// Product Description Wrapper
+// ---
+//
+.c-product__description {
+    padding: 0 $unit*3;
+}
+
+// Product Image
+// ---
+// 1. Background needs to be transparent,
+//    Should add background shadow
+.c-product__image {
+    img {
+        min-width: 200px;
+        width: 100%;
+    }
+}
+
+// Product Qty
+// ---
+//
+// 1. Hide stepper icons
+.c-product__qty {
+    background-color: white;
+
+    padding: $unit;
+
+    input {
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; // 1.
+      margin: 0; 
+    }
+}
+
+// Price
+// ---
+//
+.c-product__price {
+    font-size: $large-font-size;
+}
+
+// Rating Icons
+// ---
+// 1. Clear floating icons
+.t-pdp__rating-icons {
+    position: relative;
+
+    margin-top: $unit*4;
+
+    overflow: auto; // 1.
+    clear: both; // 1.
+
+    .c-icon {
+        height: 25px;
+
+        float: left;
+
+        &::before {
+            top: 5px;
+            right: 3px;
+        }
+    }
+
+    // Rating description
+    & + p {
+        margin-top: 0;
+    }
+}

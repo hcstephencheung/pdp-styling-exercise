@@ -1,0 +1,21 @@
+// Arrange
+// ---
+//
+// 1. IE 9 doesn't support flexbox, so we use tables as work around
+
+.c-arrange.c--no-flex { // 1.
+    display: table;
+    width: 100%;
+
+    .c-arrange__item {
+        display: table-cell;
+
+        width: 50%;
+
+        vertical-align: top;
+    }
+
+    .c--shrink {
+        width: 20%;
+    }
+}
