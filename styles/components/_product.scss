@@ -43,6 +43,13 @@
     }
 }
 
+// Product Description Wrapper
+// ---
+//
+.c-product__description {
+    padding: 0 $unit*3;
+}
+
 // Product Image
 // ---
 // 1. Background needs to be transparent,
@@ -74,6 +81,13 @@
       -webkit-appearance: none; // 1.
       margin: 0; 
     }
+}
+
+// Price
+// ---
+//
+.c-product__price {
+    font-size: $large-font-size;
 }
 
 // Rating Icons
