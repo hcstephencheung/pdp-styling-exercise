@@ -19,3 +19,26 @@
         margin: 0 auto;
     }
 }
+
+// Video Thumbnails
+// ---
+//
+// 1. Always have grid items "stick together"
+
+.t-pdp__video-thumbs-list {
+    .c-arrange {
+        overflow: auto;
+        clear:both;
+    }
+
+    .c-arrange:nth-child(odd) {
+        .c-media {
+            float: left;
+        }
+    }
+    .c-arrange:nth-child(even) {
+        .c-media {
+            float: right;
+        }
+    }
+}
